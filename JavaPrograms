@@ -1,0 +1,1730 @@
+1. Write A Java Program To Print 'Hello' On Screen And Your Name On A Separate Line.
+Expected Output :
+Hello
+Alexandra Abramov
+
+class demo01{
+
+    public static void main(String[] args)
+    {
+    System.out.println("Hello");
+    System.out.println("Alexandra Abramov");
+    }
+}
+
+
+2. Write A Java Program To Print The Sum Of Two Numbers.
+Test Data:
+74 + 36
+Expected Output :
+110
+class demo02{
+
+    public static void main(String[] args)
+    {
+        int a=74;
+        int b=36;
+        System.out.println("Sum: "+ (a+b));
+    }
+}
+
+3. Write A Java Program To Divide Two Numbers And Print Them On The Screen.
+Test Data :
+50/3
+Expected Output :
+16
+
+// class demo03{
+
+//     public static void main(String args[])
+//     {
+//         int a = 50;
+//         int b = 3;
+//         System.out.println(a/b);
+//     }
+// }
+
+import java.util.Scanner;
+class demo03{
+
+    public static void main(String args[])
+    {
+        
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b: ");
+        int b = sc.nextInt();
+        System.out.println("Division: " + a/b);
+    }
+}
+
+
+4. Write A Java Program To Print The Results Of The Following Operations.
+Test Data:
+A. -5 + 8 * 6
+B. (55+9) % 9
+C. 20 + -3*5 / 8
+D. 5 + 15 / 3 * 2 - 8 % 3
+Expected Output :
+43
+1
+19
+13
+
+// Test Data:
+// a. -5 + 8 * 6
+// b. (55+9) % 9
+// c. 20 + -3*5 / 8
+// d. 5 + 15 / 3 * 2 - 8 % 3 
+class demo04{   
+
+    public static void main(String args[])
+    {
+        int a = -5;
+        int b = 8;
+        int c = 6;
+        System.out.println(a+b*c);
+        int d = 55;
+        int e = 9;
+        int f = 9;
+        System.out.println((d+e)%f);
+        int g = 20;
+        int h = -3;
+        int i = 5;
+        int j = 8;
+        System.out.println(g+h*i/j);
+        int k = 5;
+        int l = 15;
+        int m = 3;
+        int n = 2;
+        int o = 8;
+        int p = 3;
+        System.out.println(k+l/m*n-o%p);
+
+    }
+}
+
+
+
+5. Write A Java Program That Takes Two Numbers As Input And Displays The Product Of Two Numbers.
+Test Data:
+Input First Number: 25
+Input Second Number: 5
+Expected Output :
+25 X 5 = 125
+
+// import java.util.Scanner;
+// class demo05{
+//     public static void main(String args[])
+//     {
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter value of a: ");
+//         int a = sc.nextInt();
+//         System.out.println("Enter value of b: ");
+//         int b = sc.nextInt();
+//         System.out.println("Multiplication: "+a*b);
+//     }
+// }
+
+class demo05{
+    public static void main(String args[])
+    {
+        int a = 25;
+        int b = 5;
+        System.out.println(a*b);
+
+
+    }
+}
+
+
+6. Write A Java Program To Print The Sum (Addition), Multiply, Subtract, Divide And Remainder Of Two Numbers.
+Test Data:
+Input First Number: 125
+Input Second Number: 24
+Expected Output :
+125 + 24 = 149
+125 - 24 = 101
+125 X 24 = 3000
+125 / 24 = 5
+125 Mod 24 = 5
+
+
+import java.util.Scanner;
+class demo06{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input first number: ");
+        int a = sc.nextInt();
+        System.out.println("Input second number: ");
+        int b = sc.nextInt();
+        System.out.println(a + "+" + b + "=" +(a+b));
+        System.out.println(a + "-" + b + "=" +(a-b));
+        System.out.println(a + "*" + b + "=" +(a*b));
+        System.out.println(a + "/" + b + "=" +(a/b));
+        System.out.println(a + "%" + b + "=" +(a%b));
+
+    }
+}
+
+
+7. Write A Java Program That Takes A Number As Input And Prints Its Multiplication Table Up To 10.
+Test Data:
+Input A Number: 8
+Expected Output :
+8 X 1 = 8
+8 X 2 = 16
+8 X 3 = 24
+...
+8 X 10 = 80
+
+import java.util.Scanner;
+class demo07{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Input a number: ");
+        int a = sc.nextInt();
+        
+        for(int i=1;i<11;i++)
+        {
+             System.out.println(a + "*" + i + "=" + (a*i));
+        }        
+
+    }
+}
+ 
+
+8. Write A Java Program To Display The Following Pattern.
+Sample Pattern :
+
+   J    A   V     V  A                                                  
+   J   A A   V   V  A A                                                 
+J  J  Aaaaa   V V  Aaaaa                                                
+ Jj  A     A   V  A     A
+ 
+
+
+
+9. Write A Java Program To Compute The Specified Expressions And Print The Output.
+Test Data:
+((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5))
+Expected Output
+2.138888888888889
+-
+
+import java.util.Scanner;
+class demo09{
+    public static void main(String args[])
+    {
+    //    float a = 25.5f;
+    //    float b = 3.5f;
+    //    float c = 40.5f;
+    //    float d = 4.5f;  
+    //Output: 2.1388888
+
+
+
+       double a = 25.5;
+       double b = 3.5;
+       double c = 40.5;
+       double d = 4.5;
+       // Output 2.138888888888889
+       
+
+       System.out.println((a*b-b*b)/(c-d));
+ 
+    }
+}
+ 
+
+10. Write A Java Program To Compute A Specified Formula.
+Specified Formula :
+4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+Expected Output
+2.9760461760461765
+
+// class demo10{
+//     public static void main(String args[]){
+//        System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
+ 
+//     }
+// }
+ 
+
+class demo10{
+    public static void main(String args[]){
+
+        double a = 4.0;
+        int b = 1;
+        float c = 1.0f;
+        int d = 3;
+        int e = 5;
+        int f = 7;
+        int g = 9;
+        int h = 11;
+       System.out.println(a * (b - (c/d) + (c/e) - (c/f) + (c/g) - (c/h)));
+ 
+    }
+}
+ 
+
+
+// Specified Formula :
+// 4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11))
+// Expected Output
+// 2.9760461760461765
+
+11. Write A Java Program To Print The Area And Perimeter Of A Circle.
+Test Data:
+Radius = 7.5
+Expected Output
+Perimeter Is = 47.12388980384689
+Area Is = 176.71458676442586
+
+import java.util.Scanner;
+class demo11{
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+      
+        System.out.println("Enter Radius: ");
+        float r = sc.nextFloat();
+    
+        System.out.println("Perimeter of the circle: "+(2*3.14*r));
+     
+        System.out.println("Area of the circle: "+(3.14*r*r));
+ 
+    }
+}
+
+12. Write A Java Program That Takes Three Numbers As Input To Calculate And Print The Average Of The Numbers.
+import java.util.Scanner;
+class demo12{
+
+public static void main(String arg[])
+{
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter Num1");
+    int num1 = sc.nextInt();
+
+    System.out.println("Enter Num2");
+    int num2 = sc.nextInt();
+
+    System.out.println("Enter Num3");
+    int num3 = sc.nextInt();
+
+    int avg = (num1+num2+num3)/3;
+
+    System.out.println("Average: "+avg);
+
+}
+
+
+}
+
+13. Write A Java Program To Print The Area And Perimeter Of A Rectangle.
+Test Data:
+Width = 5.5 Height = 8.5
+
+Expected Output
+Area Is 5.6 * 8.5 = 47.60
+Perimeter Is 2 * (5.6 + 8.5) = 28.20
+
+
+class demo13{
+
+    public static float width = 5.6f;
+    public static float height = 8.5f;
+
+    public static void main(String args[])
+    { 
+        float area = (width*height);
+        float perimeter = 2*(width+height);
+        System.out.println("Area is " + width + "*" +height + "=" +area);
+        System.out.println("Perimeter is " + "2" + "*" + "(" + width + "+" +height + ")" + "=" +perimeter);
+    }
+}
+
+
+// Expected Output
+// Area is 5.6 * 8.5 = 47.60
+// Perimeter is 2 * (5.6 + 8.5) = 28.20 
+
+
+14. Write A Java Program To Print An American Flag On The Screen.
+Expected Output
+
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+ * * * * *  ==================================                          
+* * * * * * ==================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================                          
+==============================================
+ 
+
+Click Me To See The Solution
+
+15. Write A Java Program To Swap Two Variables.
+import java.util.Scanner;
+class demo15{
+    public static void main(String args[])
+    {
+       
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a: ");
+        int a = sc.nextInt();
+        System.out.println("Enter b: ");
+        int b = sc.nextInt();
+        int temp = a;
+        a = b;
+        b = temp;
+        
+       
+        System.out.println("After Swapping Value of a is " + a + " and " + "b is " + b);
+    }
+}
+
+
+16. Write A Java Program To Print A Face.
+Expected Output
+
+ +"""""+                                                 
+[| O O |]                                                
+ |  ^  |                                                 
+ | '-' |                                                 
+ +-----+
+
+Click Me To See The Solution
+
+17. Write A Java Program To Add Two Binary Numbers.
+Input Data:
+Input First Binary Number: 10
+Input Second Binary Number: 11
+Expected Output
+
+Sum Of Two Binary Numbers: 101
+
+Click Me To See The Solution
+
+18. Write A Java Program To Multiply Two Binary Numbers.
+Input Data:
+Input The First Binary Number: 10
+Input The Second Binary Number: 11
+Expected Output
+
+Product Of Two Binary Numbers: 110 
+
+Click Me To See The Solution
+
+19. Write A Java Program To Convert An Integer Number To A Binary Number.
+Input Data:
+Input A Decimal Number : 5
+Expected Output
+
+Binary Number Is: 101 
+
+Click Me To See The Solution
+
+20. Write A Java Program To Convert A Decimal Number To A Hexadecimal Number.
+Input Data:
+Input A Decimal Number: 15
+Expected Output
+
+Hexadecimal Number Is : F 
+
+Click Me To See The Solution
+
+21. Write A Java Program To Convert A Decimal Number To An Octal Number.
+Input Data:
+Input A Decimal Number: 15
+Expected Output
+
+Octal Number Is: 17  
+
+Click Me To See The Solution
+
+22. Write A Java Program To Convert A Binary Number To A Decimal Number.
+Input Data:
+Input A Binary Number: 100
+Expected Output
+
+Decimal Number: 4 
+
+Click Me To See The Solution
+
+23. Write A Java Program To Convert A Binary Number To A Hexadecimal Number.
+Input Data:
+Input A Binary Number: 1101
+Expected Output
+
+Hexadecimal Value: D
+
+Click Me To See The Solution
+
+24. Write A Java Program To Convert A Binary Number To An Octal Number.
+Input Data:
+Input A Binary Number: 111
+Expected Output
+
+Octal Number: 7 
+
+Click Me To See The Solution
+
+25. Write A Java Program To Convert A Octal Number To A Decimal Number.
+Input Data:
+Input Any Octal Number: 10
+Expected Output
+
+Equivalent Decimal Number: 8
+
+Click Me To See The Solution
+
+26. Write A Java Program To Convert A Octal Number To A Binary Number.
+Input Data:
+Input Any Octal Number: 7
+Expected Output
+
+Equivalent Binary Number: 111 
+
+Click Me To See The Solution
+
+27. Write A Java Program To Convert A Octal Number To A Hexadecimal Number.
+Input Data:
+Input A Octal Number : 100
+Expected Output
+
+Equivalent Hexadecimal Number: 40
+
+Click Me To See The Solution
+
+28. Write A Java Program To Convert A Hexadecimal Value Into A Decimal Number.
+Input Data:
+Input A Hexadecimal Number: 25
+Expected Output
+
+Equivalent Decimal Number Is: 37
+
+Click Me To See The Solution
+
+29. Write A Java Program To Convert A Hexadecimal Number Into A Binary Number.
+Input Data:
+Enter Hexadecimal Number : 37
+Expected Output
+
+Equivalent Binary Number Is: 110111
+
+Click Me To See The Solution
+
+30. Write A Java Program To Convert A Hexadecimal Value Into An Octal Number.
+Input Data:
+Input A Hexadecimal Number: 40
+Expected Output
+
+Equivalent Of Octal Number Is: 100 
+
+Click Me To See The Solution
+
+31. Write A Java Program To Check Whether Java Is Installed On Your Computer.
+Expected Output
+
+Java Version: 1.8.0_71                                                            
+Java Runtime Version: 1.8.0_71-B15                                                
+Java Home: /Opt/Jdk/Jdk1.8.0_71/Jre                                               
+Java Vendor: Oracle Corporation                                                   
+Java Vendor Url: Http://Java.Oracle.Com/                                          
+Java Class Path: .
+
+Click Me To See The Solution
+
+32. Write A Java Program To Compare Two Numbers.
+Input Data:
+Input First Integer: 25
+Input Second Integer: 39
+Expected Output
+
+25 != 39                                                                          
+25 < 39                                                                           
+25 <= 39
+import java.util.Scanner;
+
+class demo32{
+
+    public static void main(String args[])
+    {
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter a: ");
+         int a = sc.nextInt();
+
+         System.out.println("Enter b: ");
+         int b = sc.nextInt();
+
+         if(a == b)
+         {
+             System.out.println(a + "=" + b);
+         }
+         if(a!=b)
+         {
+              System.out.println(a + "!=" + b);
+         }
+         if(a>b)
+         {
+              System.out.println(a + ">" + b);
+         }
+         if(a>=b)
+         {
+              System.out.println(a + ">=" + b);
+         }
+         if(a<b)
+         {
+              System.out.println(a + "<" + b);
+         }
+         if(a<=b)
+         {
+              System.out.println(a + "<=" + b);
+         }
+
+    }
+}
+
+
+33. Write A Java Program And Compute The Sum Of An Integer'S Digits.
+Input Data:
+Input An Integer: 25
+Expected Output
+
+The Sum Of The Digits Is: 7
+import java.util.Scanner;
+
+class demo33{
+
+    public static void main(String args[])
+    {
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter a number: ");
+         int number = sc.nextInt();
+         int sum =0;
+         int remainder = 0;
+
+         while(number!=0)
+         {
+            remainder = number%10;
+            sum = sum+ remainder;
+
+            number = number/10;
+
+         }
+         System.out.println("Sum of digits: "+sum);
+
+
+    }
+}s
+
+34. Write A Java Program To Compute Hexagon Area.
+Area Of A Hexagon = (6 * S^2)/(4*Tan(Π/6))
+Where S Is The Length Of A Side
+Input Data:
+Input The Length Of A Side Of The Hexagon: 6
+Expected Output
+
+The Area Of The Hexagon Is: 93.53074360871938
+
+
+import java.util.Scanner;
+
+class demo33{
+
+    public static void main(String args[])
+    {
+        
+         Scanner sc = new Scanner(System.in);
+         System.out.println("Enter a number: ");
+
+        
+
+         
+
+
+    }
+}
+
+Area of a hexagon = (6 * s^2)/(4*tan(π/6))
+where s is the length of a side
+Input Data:
+Input the length of a side of the hexagon: 6
+Expected Output
+
+The area of the hexagon is: 93.53074360871938
+
+
+
+35. Write A Java Program To Compute The Area Of A Polygon.
+Area Of A Polygon = (N*S^2)/(4*Tan(Π/N))
+Where N Is N-Sided Polygon And S Is The Length Of A Side
+Input Data:
+Input The Number Of Sides On The Polygon: 7
+Input The Length Of One Of The Sides: 6
+Expected Output
+
+The Area Is: 130.82084798405722
+
+Click Me To See The Solution
+
+36. Write A Java Program To Compute The Distance Between Two Points On The Earth'S Surface.
+Distance Between The Two Points [ (X1,Y1) & (X2,Y2)]
+D = Radius * Arccos(Sin(X1) * Sin(X2) + Cos(X1) * Cos(X2) * Cos(Y1 - Y2))
+Radius Of The Earth R = 6371.01 Kilometers
+Input Data:
+Input The Latitude Of Coordinate 1: 25
+Input The Longitude Of Coordinate 1: 35
+Input The Latitude Of Coordinate 2: 35.5
+Input The Longitude Of Coordinate 2: 25.5
+Expected Output
+
+The Distance Between Those Points Is: 1480.0848451069087 Km 
+
+Click Me To See The Solution
+
+37. Write A Java Program To Reverse A String.
+Input Data:
+Input A String: The Quick Brown Fox
+Expected Output
+
+Reverse String: Xof Nworb Kciuq Eht
+
+Click Me To See The Solution
+
+38. Write A Java Program To Count Letters, Spaces, Numbers And Other Characters In An Input String.
+Expected Output
+
+The String Is :  Aa Kiu, I Swd Skieo 236587. Gh Kiu: Sieo?? 25.33
+Letter: 23                                               
+Space: 9                                                 
+Number: 10                                               
+Other: 6
+
+// 38. Write a Java program to count letters, spaces, numbers and other characters in an input string.
+// Expected Output
+
+// The string is :  Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33
+// letter: 23                                               
+// space: 9                                                 
+// number: 10                                               
+// other: 6
+
+
+
+class demo38{ 
+    public static void main(String args[])
+    {
+        String s = "Aa kiu, I swd skieo 236587. GH kiu: sieo?? 25.33";
+        int letterCount = 0;
+        int spaceCount = 0;
+        int numberCount = 0;
+        int otherCount = 0;
+
+        for(int i=0;i<s.length();i++)
+        {
+           char ch = s.charAt(i);
+           if(Character.isLetter(ch))
+           {
+            letterCount++;
+           }
+           else if(Character.isSpaceChar(ch))
+           {
+            spaceCount++;
+           }
+           else if(Character.isDigit(ch))
+           {
+            numberCount++;
+           }
+           else{
+            otherCount++;
+           }
+        }
+
+        System.out.println("Letter: "+letterCount);
+        System.out.println("Space: "+spaceCount);
+        System.out.println("Number: "+numberCount);
+        System.out.println("Other: "+otherCount);
+
+
+
+
+    }
+}
+
+
+
+39. Write A Java Program To Create And Display A Unique Three-Digit Number Using 1, 2, 3, 4. Also Count How Many Three-Digit Numbers Are There.
+Expected Output
+
+123                                                      
+124                                                      
+...                                            
+                                                   
+431                                                      
+432                                                      
+Total Number Of The Three-Digit-Number Is 24
+
+Click Me To See The Solution
+
+40. Write A Java Program To List The Available Character Sets In Charset Objects.
+Expected Output
+
+List Of Available Character Sets:                                       
+Big5                                                                    
+Big5-Hkscs                                                              
+Cesu-8                                                                  
+Euc-Jp                                                                  
+Euc-Kr                                                                  
+Gb18030                                                                 
+Gb2312                                                                  
+Gbk                                                                     
+                                                     
+...                                            
+                                                   
+X-Sjis_0213                                                             
+X-Utf-16le-Bom                                                          
+X-Utf-32be-Bom                                                          
+X-Utf-32le-Bom                                                          
+X-Windows-50220                                                         
+X-Windows-50221                                                         
+X-Windows-874                                                           
+X-Windows-949                                                           
+X-Windows-950                                                           
+X-Windows-Iso2022jp
+
+Click Me To See The Solution
+
+41. Write A Java Program To Print The Ascii Value Of A Given Character.
+Expected Output
+
+The Ascii Value Of Z Is :90
+
+// 41. Write a Java program to print the ASCII value of a given character.
+// Expected Output
+
+// The ASCII value of Z is :90
+
+import java.util.Scanner;
+class demo41{
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter letter ");
+        char ch = sc.next().charAt(0);
+        int ascii = (int)ch;
+        System.out.println("ASCII Value :"+ascii);
+    }
+}
+
+
+42. Write A Java Program To Input And Display Your Password.
+Expected Output
+
+Input Your Password:                                                    
+Your Password Was: Abc@123
+
+Click Me To See The Solution
+
+43. Write A Java Program To Print The Following String In A Specific Format (See Output).
+Sample Output
+
+Twinkle, Twinkle, Little Star,
+	How I Wonder What You Are! 
+		Up Above The World So High,   		
+		Like A Diamond In The Sky. 
+Twinkle, Twinkle, Little Star, 
+	How I Wonder What You Are
+
+Click Me To See The Solution
+
+44. Write A Java Program That Accepts An Integer (N) And Computes The Value Of N+Nn+Nnn.
+Sample Output:
+
+Input Number: 5                                                        
+5 + 55  + 555
+
+Click Me To See The Solution
+
+45. Write A Java Program To Find The Size Of A Specified File.
+Sample Output:
+
+/Home/Students/Abc.Txt  : 0 Bytes                                      
+/Home/Students/Test.Txt : 0 Bytes 
+
+Click Me To See The Solution
+
+46. Write A Java Program To Display System Time.
+Sample Output:
+
+Current Date Time: Fri Jun 16 14:17:40 Ist 2017 
+
+Click Me To See The Solution
+
+47. Write A Java Program To Display The Current Date And Time In A Specific Format.
+Sample Output:
+
+Now: 2017/06/16 08:52:03.066 
+
+Click Me To See The Solution
+
+48. Write A Java Program To Print Odd Numbers From 1 To 99. Prints One Number Per Line.
+Sample Output:
+
+1                                                                      
+3                                                                      
+5                                                                      
+7                                                                      
+9                                                                      
+11                                                                     
+....                                                                     
+                                                                    
+91                                                                     
+93                                                                     
+95                                                                     
+97                                                                     
+99 
+
+
+class demo48{
+    public static void main(String args[])
+    {
+        for(int i = 1; i<100 ; i++)   {
+           if(i%2!=0){
+            System.out.println(i);
+           }
+        }
+    }
+}
+
+
+
+49. Write A Java Program To Accept A Number And Check Whether The Number Is Even Or Not. Prints 1 If The Number Is Even Or 0 If Odd.
+Sample Output:
+
+Input A Number: 20                                                     
+1
+
+
+import java.util.Scanner;
+class demo49{
+
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int num = sc.nextInt();
+        
+        if(num%2==0)
+        {
+            System.out.println("1");
+        }
+        else{
+            System.out.println("0");
+
+        }
+        
+    }
+}
+
+50. Write A Java Program To Print Numbers Between 1 And 100 Divisible By 3, 5 And Both.
+Sample Output:
+
+Divided By 3:                                                          
+3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57
+, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99,              
+                                                                       
+Divided By 5:                                                          
+5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 
+95,                                                                    
+                                                                       
+Divided By 3 & 5:                                                      
+15, 30, 45, 60, 75, 90,
+
+
+
+class demo50{
+
+    public static void main(String args[]){
+       
+        System.out.println("Divisible by 3: ");
+       for(int i=1;i<100;i++)
+       {
+       
+        if(i%3==0)
+        {
+            System.out.print(i+ ",");
+        }
+       }
+
+         System.out.println("Divisible by 5: ");
+       for(int i=1;i<100;i++)
+       {
+      
+        if(i%5==0)
+        {
+            System.out.print(i+ ",");
+        }
+       }
+        
+         System.out.println("Divisible by 3 & 5: ");
+        for(int i=1;i<100;i++)
+       {
+        if(i%3==0 && i%5==0)
+        {
+            System.out.print(i+ ",");
+        }
+       }
+       System.out.println("\n");
+       
+    }
+}
+
+
+
+
+51. Write A Java Program To Convert A String To An Integer.
+Sample Output:
+
+Input A Number(String): 25                                             
+The Integer Value Is: 25
+
+
+import java.util.Scanner;
+class demo01{
+    public static void main(String args[])
+    {
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Enter number");
+          String num = sc.nextLine();
+          int num2 = Integer.parseInt(num);
+          System.out.println(num2);
+
+    }
+}
+
+
+
+52. Write A Java Program To Calculate The Sum Of Two Integers And Return True If The Sum Is Equal To A Third Integer.
+Sample Output:
+
+Input The First Number : 5                                             
+Input The Second Number: 10                                            
+Input The Third Number : 15                                            
+The Result Is: True
+
+import java.util.Scanner;
+class demo52{
+   
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number");
+        int a = sc.nextInt();
+        System.out.println("Enter second number");
+        int b = sc.nextInt();
+        System.out.println("Enter third number");
+        int c = sc.nextInt();
+
+        System.out.println("Result: "+sum(a,b,c));
+    }
+
+
+    public static boolean sum(int a, int b, int c){
+        return ((a+b)==c);  
+    }
+}
+
+
+
+53. Write A Java Program That Accepts Three Integers From The User. It Returns True If The Second Number Is Higher Than The First Number And The Third Number Is Larger Than The Second Number. If "Abc" Is True, The Second Number Does Not Need To Be Larger Than The First Number.
+Sample Output:
+
+Input The First Number : 5                                             
+Input The Second Number: 10                                            
+Input The Third Number : 15                                            
+The Result Is: True
+
+
+import java.util.Scanner;
+class demo53{
+   
+    public static void main(String args[]){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter first number");
+        int a = sc.nextInt();
+        System.out.println("Enter second number");
+        int b = sc.nextInt();
+        System.out.println("Enter third number");
+        int c = sc.nextInt();
+
+        System.out.println("Result: "+sum(a,b,c));
+    }
+
+
+    public static boolean sum(int a, int b, int c){
+        return ((a+b)==c && (b>a) && (c>b));  
+    }
+}
+
+
+
+54. Write A Java Program That Accepts Three Integers From The User And Returns True If Two Or More Of Them (Integers) Have The Same Rightmost Digit. The Integers Are Non-Negative.
+Sample Output:
+
+Input The First Number : 5                                             
+Input The Second Number: 10                                            
+Input The Third Number : 15                                            
+The Result Is: True
+
+Click Me To See The Solution
+
+55. Write A Java Program To Convert Seconds To Hours, Minutes And Seconds.
+Sample Output:
+
+Input Seconds: 86399                                                   
+23:59:59
+import java.util.Scanner;
+class demo55{
+    public static void main(String args[])
+    {
+          Scanner sc = new Scanner(System.in);
+          System.out.println("Enter seconds");
+          int sec = sc.nextInt();
+
+    
+        int S = sec % 60;  
+        int H = sec / 60;  
+        int M = H % 60;         
+        H = H / 60;     
+
+        System.out.println(H + ":" +M+ ":" +S);
+    
+        
+    }
+}
+
+56. Write A Java Program To Find The Number Of Values In A Given Range Divisible By A Given Value.
+For Example X = 5, Y=20 And P =3, Find The Number Of Integers Within The Range X..Y And That Are Divisible By P I.E. { I :X ≤ I ≤ Y, I Mod P = 0 }
+Sample Output:
+
+5
+
+Click Me To See The Solution
+
+57. Write A Java Program To Accept An Integer And Count The Factors Of The Number.
+Sample Output:
+
+Input An Integer: 25                                                   
+3
+
+
+58. Write A Java Program To Capitalize The First Letter Of Each Word In A Sentence.
+Sample Output:
+
+Input A Sentence: The Quick Brown Fox Jumps Over The Lazy Dog.         
+The Quick Brown Fox Jumps Over The Lazy Dog.
+
+import java.util.Scanner;
+class demo58{
+    public static void main(String args[])
+    {
+        String s = "the quick brown fox jumps over the lazy dog.";
+        String[] arr = s.split(" ");
+        System.out.println(arr);
+        for(int i = 0; i<arr.length; i++)
+        {
+            char c = arr[i].charAt(0);
+            String c1 = String.valueOf(c).toUpperCase();
+            String sub = arr[i].subString
+
+        }
+        System.out.println(i);
+        
+    }
+}
+
+59. Write A Java Program To Convert A String Into Lowercase.
+Sample Output:
+
+Input A String: The Quick Brown Fox Jumps Over The Lazy Dog.           
+The Quick Brown Fox Jumps Over The Lazy Dog.
+
+Click Me To See The Solution
+
+60. Write A Java Program To Find The Penultimate (Next To The Last) Word In A Sentence.
+Sample Output:
+
+Input A String: The Quick Brown Fox Jumps Over The Lazy Dog.
+Penultimate Word: Lazy
+
+Click Me To See The Solution
+
+61. Write A Java Program To Reverse A Word.
+Sample Output:
+
+Input A Word: Dsaf
+Reverse Word: Fasd
+
+Click Me To See The Solution
+
+62. Write A Java Program That Accepts Three Integer Values And Returns True If One Is 20 Or More Less Than The Others' Subtractions.
+Sample Output:
+
+Input The First Number : 15                                            
+Input The Second Number: 20                                            
+Input The Third Number : 25                                            
+False
+
+Click Me To See The Solution
+
+63. Write A Java Program That Accepts Two Integer Values From The User And Returns The Largest Value. However If The Two Values Are The Same, Return 0 And Find The Smallest Value If The Two Values Have The Same Remainder When Divided By 6.
+Sample Output:
+
+Input The First Number : 12                                            
+Input The Second Number: 13                                            
+Result: 13
+
+Click Me To See The Solution
+
+64. Write A Java Program That Accepts Two Integer Values Between 25 And 75 And Returns True If There Is A Common Digit In Both Numbers.
+Sample Output:
+
+Input The First Number : 35                                            
+Input The Second Number: 45                                            
+Result: True
+
+Click Me To See The Solution
+
+65. Write A Java Program To Calculate The Modules Of Two Numbers Without Using Any Inbuilt Modulus Operator.
+Sample Output:
+
+Input The First Number : 19                                            
+Input The Second Number: 7                                             
+5   
+
+import java.util.Scanner;
+
+
+class Main{
+    public static void main(String args[])
+    {
+     Scanner sc = new Scanner(System.in);
+     System.out.println("Enter a: ");
+     int a = sc.nextInt();
+     System.out.println("Enter b: ");
+     int b = sc.nextInt();
+     
+     int divided = a/b;
+     int remainder = a - (divided * b);
+     System.out.println("Remainder: "+remainder);
+     
+    }
+}
+
+66. Write A Java Program To Compute The Sum Of The First 100 Prime Numbers.
+Sample Output:
+
+Sum Of The First 100 Prime Numbers: 24133 
+
+Click Me To See The Solution
+
+67. Write A Java Program To Insert A Word In The Middle Of Another String.
+Insert "Tutorial" In The Middle Of "Python 3.0", So The Result Will Be Python Tutorial 3.0.
+Sample Output:
+
+Python Tutorial 3.0
+
+Click Me To See The Solution
+
+68. Write A Java Program To Create Another String Of 4 Copies Of The Last 3 Characters Of The Original String. The Original String Length Must Be 3 And Above.
+Sample Output:
+
+3.03.03.03.0 
+
+Click Me To See The Solution
+
+69. Write A Java Program To Extract The First Half Of A Even String.
+Test Data: Python
+Sample Output:
+
+Pyt
+
+Click Me To See The Solution
+
+70. Write A Java Program To Create A String In The Form Of Short_String + Long_String + Short_String From Two Strings. The Strings Must Not Have The Same Length.
+Test Data: Str1 = Python
+Str2 = Tutorial
+Sample Output:
+
+Pythontutorialpython
+
+Click Me To See The Solution
+
+71. Write A Java Program To Create The Concatenation Of The Two Strings Except Removing The First Character Of Each String. The Length Of The Strings Must Be 1 And Above.
+Test Data: Str1 = Python
+Str2 = Tutorial
+Sample Output:
+
+Ythonutorial
+
+Click Me To See The Solution
+
+72. Write A Java Program To Create A String Taking The First Three Characters From A Given String. If The String Length Is Less Than 3 Use "#" As Substitute Characters.
+Test Data: Str1 = " "
+Sample Output:
+
+###
+
+Click Me To See The Solution
+
+73. Write A Java Program To Create A String Taking The First And Last Characters From Two Given Strings. If The Length Of Each String Is 0 Use "#" For Missing Characters.
+Test Data: Str1 = "Python"
+Str2 = " "
+Sample Output:
+
+P#
+
+Click Me To See The Solution
+
+74. Write A Java Program To Test If 10 Appears As The First Or Last Element Of An Array Of Integers. The Array Length Must Be Broader Than Or Equal To 2.
+Sample Output:
+Test Data: Array = 10, -20, 0, 30, 40, 60, 10
+
+True
+
+Click Me To See The Solution
+
+75. Write A Java Program To Test If The First And Last Elements Of An Array Of Integers Are The Same. The Array Length Must Be Broader Than Or Equal To 2.
+Test Data: Array = 50, -20, 0, 30, 40, 60, 10
+Sample Output:
+
+False
+
+Click Me To See The Solution
+
+76. Write A Java Program To Test If The First And Last Element Of Two Integer Arrays Are The Same. The Array Length Must Be Greater Than Or Equal To 2.
+Test Data: Array1 = 50, -20, 0, 30, 40, 60, 12
+Array2 = 45, 20, 10, 20, 30, 50, 11
+Sample Output:
+
+False
+
+Click Me To See The Solution
+
+77. Write A Java Program To Create An Array Of Length 2 From Two Integer Arrays With Three Elements. The Newly Created Array Will Contain The First And Last Elements From The Two Arrays.
+Test Data: Array1 = 50, -20, 0
+Array2 = 5, -50, 10
+Sample Output:
+
+Array1: [50, -20, 0]                                                   
+Array2: [5, -50, 10]                                                   
+New Array: [50, 10]
+
+Click Me To See The Solution
+
+78. Write A Java Program To Test That A Given Array Of Integers Of Length 2 Contains A 4 Or A 7.
+Sample Output:
+
+Original Array: [5, 7]                                                 
+True 
+
+Click Me To See The Solution
+
+79. Write A Java Program To Rotate An Array (Length 3) Of Integers In The Left Direction.
+Sample Output:
+
+Original Array: [20, 30, 40]                                           
+Rotated Array: [30, 40, 20]
+
+Click Me To See The Solution
+
+80. Write A Java Program To Get The Largest Value Between The First And Last Elements Of An Array (Length 3) Of Integers.
+Sample Output:
+
+Original Array: [20, 30, 40]                                           
+Larger Value Between First And Last Element: 40 
+
+Click Me To See The Solution
+
+81. Write A Java Program To Swap The First And Last Elements Of An Array (Length Must Be At Least 1) And Create Another Array.
+Sample Output:
+
+Original Array: [20, 30, 40]                                           
+New Array After Swaping The First And Last Elements: [40, 30, 20] 
+
+Click Me To See The Solution
+
+82. Write A Java Program To Find The Largest Element Between The First, Last, And Middle Values In An Array Of Integers (Even Length).
+Sample Output:
+
+Original Array: [20, 30, 40, 50, 67]                                   
+Largest Element Between First, Last, And Middle Values: 67 
+
+Click Me To See The Solution
+
+83. Write A Java Program To Multiply The Corresponding Elements Of Two Integer Arrays.
+Sample Output:
+
+Array1: [1, 3, -5, 4]                                                  
+                                                                       
+Array2: [1, 4, -5, -2]                                                 
+                                                                       
+Result: 1 12 25 -8
+
+Click Me To See The Solution
+
+84. Write A Java Program To Take The Last Three Characters From A Given String. It Will Add The Three Characters At Both The Front And Back Of The String. String Length Must Be Greater Than Three And More.
+Test Data: "Python" Will Be "Honpythonhon"
+Sample Output:
+
+Honpythonhon
+
+Click Me To See The Solution
+
+85. Write A Java Program To Check If A String Starts With A Specified Word.
+Sample Data: String1 = "Hello How Are You?"
+Sample Output:
+
+True
+
+Click Me To See The Solution
+
+86. Write A Java Program Starting With An Integer N, Divide It By 2 If It Is Even, Or Multiply It By 3 And Add 1 If It Is Odd. Repeat The Process Until N = 1.
+
+Click Me To See The Solution
+
+87. Write A Java Program That Then Reads An Integer And Calculates The Sum Of Its Digits And Writes The Number Of Each Digit Of The Sum In English.
+
+Click Me To See The Solution
+
+88. Write A Java Program To Get The Current System Environment And System Properties.
+Click Me To See The Solution
+
+89. Write A Java Program To Check Whether A Security Manager Has Already Been Established For The Current Application Or Not.
+Click Me To See The Solution
+
+90. Write A Java Program To Get The Value Of Environment Variables Path, Temp, Username.
+Click Me To See The Solution
+
+91. Write A Java Program To Measure How Long Code Executes In Nanoseconds.
+Click Me To See The Solution
+
+92. Write A Java Program To Count The Number Of Even And Odd Elements In A Given Array Of Integers.
+Click Me To See The Solution
+
+93. Write A Java Program To Test If An Array Of Integers Contains An Element 10 Next To 10 Or An Element 20 Next To 20, But Not Both.
+Click Me To See The Solution
+
+94. Write A Java Program To Rearrange All The Elements Of A Given Array Of Integers So That All The Odd Numbers Come Before All The Even Numbers.
+Click Me To See The Solution
+
+95. Write A Java Program To Create An Array (Length # 0) Of String Values. The Elements Will Contain "0", "1", "2" … Through ... N-1.
+Click Me To See The Solution
+
+96. Write A Java Program To Check If There Is A 10 In An Array Of Integers With A 20 Somewhere Later On.
+Click Me To See The Solution
+
+97. Write A Java Program To Check If An Array Of Integers Contains A Specified Number Next To Each Other Or Two Same Numbers Separated By One Element.
+Click Me To See The Solution
+
+98. Write A Java Program To Check If The Value 20 Appears Three Times And No 20'S Are Next To Each Other In The Array Of Integers.
+Click Me To See The Solution
+
+99. Write A Java Program That Checks If A Specified Number Appears In Every Pair Of Adjacent Integers Of A Given Array Of Integers.
+Click Me To See The Solution
+
+100. Write A Java Program To Count The Elements That Differ By 1 Or Less Between Two Given Arrays Of Integers With The Same Length.
+Click Me To See The Solution
+
+101. Write A Java Program To Determine Whether The Number 10 In A Given Array Of Integers Exceeds 20.
+Click Me To See The Solution
+
+102. Write A Java Program To Check If A Specified Array Of Integers Contains 10 Or 30.
+Click Me To See The Solution
+
+103. Write A Java Program To Create An Array From A Given Array Of Integers. The Newly Created Array Will Contain Elements From The Given Array After The Last Element Value Is 10.
+Click Me To See The Solution
+
+104. Write A Java Program To Create An Array From A Given Array Of Integers. The Newly Created Array Will Contain The Elements From The Given Array Before The Last Element Value Of 10.
+Click Me To See The Solution
+
+105. Write A Java Program To Check If A Group Of Numbers (L) At The Start And End Of A Given Array Are The Same.
+Click Me To See The Solution
+
+106. Write A Java Program To Create An Array Left Shifted From A Given Array Of Integers.
+Click Me To See The Solution
+
+107. Write A Java Program To Check If An Array Of Integers Contains Three Increasing Adjacent Numbers.
+Click Me To See The Solution
+
+108. Write A Java Program To Add All The Digits Of A Given Positive Integer Until The Result Has A Single Digit.
+Click Me To See The Solution
+
+109. Write A Java Program To Form A Staircase Shape Of N Coins Where Every K-Th Row Must Have Exactly K Coins.
+Click Me To See The Solution
+
+110. Write A Java Program To Check Whether The Given Integer Is A Power Of 4 Or Not.
+Given Num = 64, Return True. Given Num = 6, Return False.
+Click Me To See The Solution
+
+111. Write A Java Program To Add Two Numbers Without Arithmetic Operators.
+Given X = 10 And Y = 12; Result = 22
+Click Me To See The Solution
+
+112. Write A Java Program To Compute The Number Of Trailing Zeros In A Factorial.
+7! = 5040, Therefore The Output Should Be 1
+Click Me To See The Solution
+
+113. Write A Java Program To Merge Two Given Sorted Arrays Of Integers And Create Another Sorted Array.
+Array1 = [1,2,3,4]
+Array2 = [2,5,7, 8]
+Result = [1,2,2,3,4,5,7,8]
+Click Me To See The Solution
+
+114. Write A Java Program That Rotates A String By An Offset (Rotate From Left To Right.
+Click Me To See The Solution
+
+115. Write A Java Program To Check If A Positive Number Is A Palindrome Or Not.
+Input A Positive Integer: 151
+Is 151 Is A Palindrome Number?
+True
+Click Me To See The Solution
+
+116. Write A Java Program That Iterates Integers From 1 To 100. For Multiples Of Three Print "Fizz" Instead Of The Number And Print "Buzz" For Five. When The Number Is Divided By Three And Five, Print "Fizz Buzz".
+Click Me To See The Solution
+
+117. Write A Java Program To Compute The Square Root Of A Given Number.
+Input A Positive Integer: 25
+Square Root Of 25 Is: 5
+Click Me To See The Solution
+
+118. Write A Java Program To Get The First Occurrence (Position Starts From 0.) Of A String Within A Given String.
+Click Me To See The Solution
+
+119. Write A Java Program To Get The First Occurrence (Position Starts From 0.) Of An Element Of A Given Array.
+Click Me To See The Solution
+
+120. Write A Java Program That Searches For A Value In An M X N Matrix.
+Click Me To See The Solution
+
+121. Write A Java Program To Reverse A Linked List.
+Example: For Linked List 20->40->60->80, The Reversed Linked List Is 80->60->40->20
+Click Me To See The Solution
+
+122. Write A Java Program To Find A Contiguous Subarray With The Largest Sum From A Given Array Of Integers.
+Note: In Computer Science, The Maximum Subarray Problem Is The Task Of Finding The Contiguous Subarray Within A One-Dimensional Array Of Numbers Which Has The Largest Sum. For Example, For The Sequence Of Values −2, 1, −3, 4, −1, 2, 1, −5, 4; The Contiguous Subarray With The Largest Sum Is 4, −1, 2, 1, With Sum 6. The Subarray Should Contain One Integer At Least. Click Me To See The Solution
+
+123. Write A Java Program To Find The Subarray With Smallest Sum From A Given Array Of Integers.
+Click Me To See The Solution
+
+124. Write A Java Program To Find The Index Of A Value In A Sorted Array. If The Value Does Not Find Return The Index Where It Would Be If It Were Inserted In Order.
+Example:
+[1, 2, 4, 5, 6] 5(Target) -> 3(Index)
+[1, 2, 4, 5, 6] 0(Target) -> 0(Index)
+[1, 2, 4, 5, 6] 7(Target) -> 5(Index)
+Click Me To See The Solution
+
+125. Write A Java Program To Get The Preorder Traversal Of The Values Of The Nodes In A Binary Tree.
+Example:
+
+    10
+   / \
+  20   30
+ / \
+40   50
+
+Expected Output: 10 20 40 50 30
+Click Me To See The Solution
+
+126. Write A Java Program To Get The In-Order Traversal Of Its Nodes' Values In A Binary Tree.
+
+    10
+   / \
+  20   30
+ / \
+40   50
+
+Example:{10, 20, 30, 40, 50}
+Output: 40 20 50 10 30
+Click Me To See The Solution
+
+127. Write A Java Program To Get The Postorder Traversal Of Its Nodes' Values In A Binary Tree.
+
+    10
+   / \
+  20   30
+ / \
+40   50
+
+Click Me To See The Solution
+
+128. Write A Java Program To Calculate The Median Of A Non-Sorted Array Of Integers.
+Original Array: [10, 2, 38, 22, 38, 23]
+Median Of The Said Array Of Integers: 30
+Original Array: [10, 2, 38, 23, 38, 23, 21]
+Median Of The Said Array Of Integers: 23
+Click Me To See The Solution
+
+129. Write A Java Program To Find A Number That Appears Only Once In A Given Array Of Integers. All Numbers Occur Twice.
+Source Array : [10, 20, 10, 20, 30, 40, 40, 30, 50] 50 Appears Only Once
+Click Me To See The Solution
+
+130. Write A Java Program To Find The Maximum Depth Of A Given Binary Tree.
+Sample Output: The Maximum Depth Of The Binary Tree Is: 3
+Click Me To See The Solution
+
+131. Write A Java Program To Find The Updated Length Of A Sorted Array Where Each Element Appears Only Once (Remove Duplicates).
+Original Array: [1, 1, 2, 3, 3, 3, 4, 5, 6, 7, 7] The Length Of The Original Array Is: 11 After Removing Duplicates, The New Length Of The Array Is: 7
+Click Me To See The Solution
+
+132. Write A Java Program To Find The Updated Length Of A Given Sorted Array Where Duplicate Elements Appear At Most Twice.
+Original Array: [1, 1, 2, 3, 3, 3, 4, 5, 6, 7, 7, 7, 7]
+The Length Of The Original Array Is: 13
+After Removing Duplicates, The New Length Of The Array Is: 10
+Click Me To See The Solution
+
+133. Write A Java Program To Find A Path From Top Left To Bottom In The Right Direction Which Minimizes The Sum Of All Numbers Along Its Path.
+Note: Move Either Down Or Right At Any Point In Time.
+Sample Output: Sum Of All Numbers Along Its Path: 13
+Click Me To See The Solution
+
+134. Write A Java Program To Find Distinct Ways To Climb To The Top (N Steps To Reach The Top) Of Stairs. Each Time You Climb, You Can Climb 1 Or 2 Steps.
+Example: N = 5
+A) 1+1+1+1+1 = 5 B) 1+1+1+2 = 5 C) 1+2+2 = 5 D) 2+2+1 = 5 E) 2+1+1+1 = 5 F) 2+1+2 = 5 G) 1+2+1+1 = 5 H) 1+1+2+1 = 5
+Sample Output: Distinct Ways Can You Climb To The Top: 8
+Click Me To See The Solution
+
+135. Write A Java Program To Remove Duplicates From A Sorted Linked List.
+Original List With Duplicate Elements:
+12->12->13->14->15->15->16->17->17
+After Removing Duplicates From The Said List:
+12->13->14->15->16->17
+Click Me To See The Solution
+
+136. Write A Java Program To Find Possible Distinct Paths From The Top-Left Corner To The Bottom-Right Corner Of A Given Grid (M X N).
+Note: You Can Move Either Down Or Right At Any Point In Time.
+Sample Output: Unique Paths From Top-Left Corner To Bottom-Right Corner Of The Said Grid: 3
+Click Me To See The Solution
+
+137. Write A Java Program To Find Possible Unique Paths Considering Some Obstacles, From Top-Left Corner To Bottom-Right Corner Of A Given Grid (M X N).
+Note: You Can Move Either Down Or Right At Any Point In Time And An Obstacle And Empty Space Is Marked As 1 And 0 Respectively In The Grid.
+Sample Grid:
+Int[][] Obstacle_Grid ={
+{0, 0, 0},
+{0, 1, 0},
+{0, 0, 0},
+};
+Sample Output: Unique Paths From Top-Left Corner To Bottom-Right Corner Of The Said Grid (Considering Some Obstacles): 2
+Click Me To See The Solution
+
+138. Write A Java Program To Find The Longest Words In A Dictionary.
+Example-1:
+{
+"Cat",
+"Flag",
+"Green",
+"Country",
+"W3resource"
+}
+Result: "W3resource"
+Example-2:
+{
+"Cat",
+"Dog",
+"Red",
+"Is",
+"Am"
+}
+Result: "Cat", "Dog", "Red"
+Click Me To See The Solution
+
+139. Write A Java Program To Get The Index Of The First And The Last Number Of A Subarray Where The Sum Of Numbers Is Zero. This Is From A Given Array Of Integers.
+Original Array : [1, 2, 3, -6, 5, 4]
+Index Of The Subarray Of The Said Array Where The Sum Of Numbers Is Zero: [0, 3]
+Click Me To See The Solution
+
+140. Write A Java Program To Merge All Overlapping Intervals From A Given Collection Of Intervals.
+Sample Output: 1 6
+8 10
+15 20
+Click Me To See The Solution
+
+141. Write A Java Program To Check If A Given String Has All Distinct Characters.
+Sample Output: Original String : Xyyz
+String Has All Unique Characters: False
+Click Me To See The Solution
+
+142. Write A Java Program To Check If Two Strings Are Anagrams Or Not.
+According To Wikipedia "An Anagram Is A Word Or Phrase Formed By Rearranging The Letters Of A Different Word Or Phrase, Typically Using All The Original Letters Exactly Once. For Example, The Word Anagram Can Be Rearranged Into Nag A Ram, Or The Word Binary Into Brainy."
+Sample Output: String-1 : Wxyz
+String-2 : Zyxw
+Check If Two Given Strings Are Anagrams Or Not?: True
+Click Me To See The Solution
+
+143. Write A Java Program To Merge The Two Sorted Linked Lists.
+Sample Output:
+Merge Two Sorted Listst:
+1 2 3 7 9 13 40
+Click Me To See The Solution
+
+144. Write A Java Program To Remove All Occurrences Of A Specified Value In A Given Array Of Integers. Return The Updated Array Length.
+Sample Output:
+Original Array: [1, 4, 6, 7, 6, 2]
+The Length Of The New Array Is: 4
+Click Me To See The Solution
+
+145. Write A Java Program To Remove The Nth Element From The End Of A Given List.
+Sample Output:
+Original Node:
+1 2 3 4 5
+After Removing 2nd Element From End:
+1 2 3 5
+Click Me To See The Solution
+
+146. Write A Java Program To Convert An Array Of Sorted Items Into A Binary Search Tree. Maintain The Minimal Height Of The Tree.
+Sample Output:
+2
+1
+4
+6
+5
+3
+Click Me To See The Solution
+
+147. Write A Java Program To Find The Number Of Bits Required To Flip To Convert Two Given Integers.
+Sample Output:
+2
+Click Me To See The Solution
+
+148. Write A Java Program To Find The Index Of The First Unique Character In A Given String. Assume That There Is At Least One Unique Character In The String.
+Sample Output:
+Original String: Wresource
+First Unique Character Of The Above: 0
+Click Me To See The Solution
+
+149. Write A Java Program To Check If A Given String Is A Permutation Of Another Given String.
+Sample Output:
+Original Strings: Xxyz Yxzx
+True
+Click Me To See The Solution
+
+150. Write A Java Program To Test If A Binary Tree Is A Subtree Of Another Binary Tree.
+Sample Output:
+Original Strings: Xxyz Yxzx
+True
+Click Me To See The Solution
+
+
+
