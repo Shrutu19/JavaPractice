@@ -1246,7 +1246,18 @@ Sample Output:
 
 Python Tutorial 3.0
 
-Click Me To See The Solution
+import java.util.Scanner;
+import java.lang.String;
+
+class Main{
+
+    public static void main(String args[]){
+        String main_string = "Python 3.0";
+        String word = "Tutorial";
+        String result = main_string.substring(0,7) + word + main_string.substring(6);
+        System.out.println(result);
+    }
+}
 
 68. Write A Java Program To Create Another String Of 4 Copies Of The Last 3 Characters Of The Original String. The Original String Length Must Be 3 And Above.
 Sample Output:
