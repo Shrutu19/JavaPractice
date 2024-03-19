@@ -1264,7 +1264,7 @@ Sample Output:
 
 3.03.03.03.0 
 
-Click Me To See The Solution
+
 
 69. Write A Java Program To Extract The First Half Of A Even String.
 Test Data: Python
@@ -1272,7 +1272,14 @@ Sample Output:
 
 Pyt
 
-Click Me To See The Solution
+class Main{
+    public static void main(String args[]){
+        String main_string = "Java";
+        String substring = main_string.substring(0, main_string.length()/2);
+        System.out.println(substring);
+        
+    }
+}
 
 70. Write A Java Program To Create A String In The Form Of Short_String + Long_String + Short_String From Two Strings. The Strings Must Not Have The Same Length.
 Test Data: Str1 = Python
@@ -1281,7 +1288,10 @@ Sample Output:
 
 Pythontutorialpython
 
-Click Me To See The Solution
+
+
+
+
 
 71. Write A Java Program To Create The Concatenation Of The Two Strings Except Removing The First Character Of Each String. The Length Of The Strings Must Be 1 And Above.
 Test Data: Str1 = Python
