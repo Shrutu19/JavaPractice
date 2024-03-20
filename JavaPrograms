@@ -1288,7 +1288,20 @@ Sample Output:
 
 Pythontutorialpython
 
-
+class Main{
+    public static void main(String args[]){
+       String str1 = "python";
+       String str2 = "tutorial";
+       if(str1.length()<=str2.length())
+       {
+       System.out.println(str1+str2+str1);
+       }
+       else
+       {
+           System.out.println(str2+str1+str2);
+       }
+    }
+}
 
 
 
@@ -1300,15 +1313,35 @@ Sample Output:
 
 Ythonutorial
 
-Click Me To See The Solution
+class Main{
+    public static void main(String args[]){
+       String str1 = "python";
+       String str2 = "tutorial";
+       String sub1 = str1.substring(1);
+       String sub2 = str2.substring(1);
+       System.out.println(sub1+sub2);
+    }
+}
+
 
 72. Write A Java Program To Create A String Taking The First Three Characters From A Given String. If The String Length Is Less Than 3 Use "#" As Substitute Characters.
 Test Data: Str1 = " "
 Sample Output:
 
 ###
+class Main{
+    public static void main(String args[]){
+       String str1 = "shr";
+       if(str1.length()<=3)
+       {
+           System.out.println("###");
 
-Click Me To See The Solution
+       }
+       else{
+           System.out.println(str1);
+       }
+    }
+}
 
 73. Write A Java Program To Create A String Taking The First And Last Characters From Two Given Strings. If The Length Of Each String Is 0 Use "#" For Missing Characters.
 Test Data: Str1 = "Python"
