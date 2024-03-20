@@ -1349,8 +1349,18 @@ Str2 = " "
 Sample Output:
 
 P#
-
-Click Me To See The Solution
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+       Scanner sc = new Scanner(System.in);
+       System.out.println("Enter Str1: ");
+       String str1 = sc.nextLine();
+       for(int i=str1.length()-1; i>=0 ;i--){
+         char lastStr = str1.charAt(i);
+         System.out.println(lastStr);
+       }
+    }
+}
 
 74. Write A Java Program To Test If 10 Appears As The First Or Last Element Of An Array Of Integers. The Array Length Must Be Broader Than Or Equal To 2.
 Sample Output:
@@ -1358,7 +1368,13 @@ Test Data: Array = 10, -20, 0, 30, 40, 60, 10
 
 True
 
-Click Me To See The Solution
+class Main{
+    public static void main(String args[]){
+       int arr[]={10, -20, 0, 30, 40, 60, 10};
+       boolean result = (arr[0]==10 && arr[arr.length-1] == 10);
+       System.out.println(result);
+    }
+}
 
 75. Write A Java Program To Test If The First And Last Elements Of An Array Of Integers Are The Same. The Array Length Must Be Broader Than Or Equal To 2.
 Test Data: Array = 50, -20, 0, 30, 40, 60, 10
@@ -1366,7 +1382,13 @@ Sample Output:
 
 False
 
-Click Me To See The Solution
+class Main{
+    public static void main(String args[]){
+       int arr[]={50, -20, 0, 30, 40, 60, 10};
+       boolean result = (arr[0]==10 && arr[arr.length-1] == 10);
+       System.out.println(result);
+    }
+}
 
 76. Write A Java Program To Test If The First And Last Element Of Two Integer Arrays Are The Same. The Array Length Must Be Greater Than Or Equal To 2.
 Test Data: Array1 = 50, -20, 0, 30, 40, 60, 12
@@ -1375,7 +1397,25 @@ Sample Output:
 
 False
 
-Click Me To See The Solution
+import java.util.Scanner;
+class Main{
+    public static void main(String args[]){
+       int arr1[] = {50, -20, 0, 30, 40, 60, 12};
+       int arr2[] = {45, 20, 10, 20, 30, 50, 11};
+       
+       if(arr1.length >= 2 && arr2.length >=2)
+       {
+             boolean result = (arr1[0] ==  arr1[arr1.length-1]) && (arr2[0] ==  arr2[arr2.length-1]);
+               System.out.println(result);
+       }
+       else
+       {
+           System.out.println("Array length should be greater than 2");
+       }
+      
+    }
+}
+
 
 77. Write A Java Program To Create An Array Of Length 2 From Two Integer Arrays With Three Elements. The Newly Created Array Will Contain The First And Last Elements From The Two Arrays.
 Test Data: Array1 = 50, -20, 0
@@ -1386,7 +1426,18 @@ Array1: [50, -20, 0]
 Array2: [5, -50, 10]                                                   
 New Array: [50, 10]
 
-Click Me To See The Solution
+import java.util.Arrays;
+class Main{
+    public static void main(String args[]){
+       int arr1[] = {50, -20, 0} ;
+       System.out.println("Array 1: "+Arrays.toString(arr1));
+       int arr2[] = {5, -50, 10};
+       System.out.println("Array 2: "+Arrays.toString(arr2));
+       int arr3[] = {arr1[0], arr2[arr2.length-1]};
+       System.out.println("Array 3: "+ Arrays.toString(arr3));
+    }
+}
+
 
 78. Write A Java Program To Test That A Given Array Of Integers Of Length 2 Contains A 4 Or A 7.
 Sample Output:
@@ -1394,15 +1445,38 @@ Sample Output:
 Original Array: [5, 7]                                                 
 True 
 
-Click Me To See The Solution
+import java.util.Arrays;
+class Main{
+    public static void main(String args[]){
+       int arr[] = {5,7} ;
+       
+       if (arr[0]==4 || arr[1]==7)
+       {
+           System.out.println("true");
+       }
+       else{
+           System.out.println("false");
+    }}
+}
+
 
 79. Write A Java Program To Rotate An Array (Length 3) Of Integers In The Left Direction.
 Sample Output:
 
 Original Array: [20, 30, 40]                                           
 Rotated Array: [30, 40, 20]
+import java.util.Arrays;
+class Main{
+    public static void main(String args[]){
+       int arr[] = {20, 30, 40};
+    //   int arr1 = {arr[0]=arr[1]};
+    //   int arr2 = {arr[1]=arr[2]};
+    //   int arr3 = {arr[2]=arr[3]};
+       int result[] = {arr[1], arr[2], arr[0]};
+       System.out.println(Arrays.toString(result));
+    }
+}
 
-Click Me To See The Solution
 
 80. Write A Java Program To Get The Largest Value Between The First And Last Elements Of An Array (Length 3) Of Integers.
 Sample Output:
@@ -1410,7 +1484,20 @@ Sample Output:
 Original Array: [20, 30, 40]                                           
 Larger Value Between First And Last Element: 40 
 
-Click Me To See The Solution
+class Main{
+    public static void main(String args[]){
+       int arr[] = {20, 30, 40};
+       int max = arr[0];
+       for(int i=arr[1];i<arr.length;i++)
+       {
+          if(arr[i]>max){
+          max = arr[i];
+          }
+       }
+       System.out.println(max);
+    }
+}
+
 
 81. Write A Java Program To Swap The First And Last Elements Of An Array (Length Must Be At Least 1) And Create Another Array.
 Sample Output:
@@ -1418,7 +1505,16 @@ Sample Output:
 Original Array: [20, 30, 40]                                           
 New Array After Swaping The First And Last Elements: [40, 30, 20] 
 
-Click Me To See The Solution
+import java.util.Arrays;
+class Main{
+    public static void main(String args[]){
+       int arr[] = {20, 30, 40};
+       int temp = arr[0];
+       arr[0] = arr[arr.length-1];
+       arr[arr.length-1] = temp;
+       System.out.print(Arrays.toString(arr));
+    }
+}
 
 82. Write A Java Program To Find The Largest Element Between The First, Last, And Middle Values In An Array Of Integers (Even Length).
 Sample Output:
@@ -1426,7 +1522,6 @@ Sample Output:
 Original Array: [20, 30, 40, 50, 67]                                   
 Largest Element Between First, Last, And Middle Values: 67 
 
-Click Me To See The Solution
 
 83. Write A Java Program To Multiply The Corresponding Elements Of Two Integer Arrays.
 Sample Output:
@@ -1437,7 +1532,22 @@ Array2: [1, 4, -5, -2]
                                                                        
 Result: 1 12 25 -8
 
-Click Me To See The Solution
+import java.util.Arrays;
+class Main{
+    public static void main(String args[]){
+        int arr1[] = {1, 3, -5, 4};
+        int arr2[] = {1, 4, -5, -2};
+        
+        int result = 0;
+        for(int i = 0; i<arr1.length; i++){
+            for(int j = 0; j<arr2.length; j++){
+            result = arr1[i] * arr2[i];
+            } System.out.print(result+" ");
+        }
+    }
+}
+
+
 
 84. Write A Java Program To Take The Last Three Characters From A Given String. It Will Add The Three Characters At Both The Front And Back Of The String. String Length Must Be Greater Than Three And More.
 Test Data: "Python" Will Be "Honpythonhon"
