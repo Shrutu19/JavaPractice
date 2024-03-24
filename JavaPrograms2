@@ -18,9 +18,64 @@ public class Main{
 	}
 }
 
-2. Write a Java program to sum values of an array.
+import java.util.Arrays;
+public class Main{
+    
+    public static void numSort(int arr[], int n){
+        
+        for(int i=0;i<n-1;i++) {
+            for(int j=i+1; j<n; j++){
+                if(arr[i]>arr[j]){
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
+                }
+            }
+        }
+        
+    public static void textSort(String arr2[], int m){
+        
+        for(int i=0;i<m-1;i++) {
+            for(int j=i+1; j<m; j++){
+                if(arr2[i]>arr2[j]){
+                    int temp = arr2[i];
+                    arr2[i] = arr2[j];
+                    arr2[j] = temp;
+                }
+            }
+        }
+    }    
+        
+	public static void main(String[] args) {
+	    
+	    int arr[] = {4,9,2,6,8};
+	    System.out.println("Before Sort: "+Arrays.toString(arr));
+	    numSort(arr, arr.length);
+	    System.out.println("After Sort: "+Arrays.toString(arr));
+	    
+	    String arr2[] = {"i","w", "s","y"};
+	    System.out.println("Before Sort: "+Arrays.toString(arr2));
+	    textSort(arr2, arr2.length);
+	    System.out.println("After Sort: "+Arrays.toString(arr2));
+	    
+	}
+}
 
-Click me to see the solution
+
+2. Write a Java program to sum values of an array.
+import java.util.Arrays;
+public class Main{
+	public static void main(String[] args) {
+	    
+	    int arr[] = {4,9,2,6,8};
+	    int sum =0;
+	    for(int i=0; i<arr.length;i++)
+	    {
+	         sum = sum+arr[i];
+	    }
+	    System.out.println("Sum : "+sum);
+	}
+}
 
 3. Write a Java program to print the following grid.
 
@@ -36,8 +91,17 @@ Expected Output :
 - - - - - - - - - -                                                                                           
 - - - - - - - - - -                                                                                           
 - - - - - - - - - -  
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print("- ");
+            }
+            System.out.println(); 
+        }
+    }
+}
 
-Click me to see the solution
 
 4. Write a Java program to calculate the average value of array elements.
 
