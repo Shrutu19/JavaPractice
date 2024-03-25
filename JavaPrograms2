@@ -288,16 +288,73 @@ class Main{
 }
 
 14. Write a Java program to find common elements between two arrays (string values).
+import java.util.Arrays;
 
-Click me to see the solution
+class Main{
+    
+    public static void main(String args[]){
+        
+        String arr1[] = {"Shruti", "Shru", "shr"};
+        String arr2[] = {"Shruti", "Shrutiee", "Shr"};
+
+        
+        for(int i=0;i<arr1.length;i++)
+        {
+            for(int j=0; j<arr2.length; j++)
+            {
+                if(arr1[i].equals(arr2[j])){
+                System.out.println(arr2[j]);
+                }
+            }
+        }
+}
+}
 
 15. Write a Java program to find common elements between two integer arrays.
+import java.util.Arrays;
 
-Click me to see the solution
+class Main{
+    
+    public static void main(String args[]){
+        
+        int arr1[] = {1,2,3,4,5};
+        int arr2[] = {5,6,7,8,9};
+        
+        for(int i=0; i<arr1.length;i++)
+        {
+            for(int j=0;j<arr2.length;j++)
+            {
+                if(arr1[i]==arr2[j])
+                {
+                    System.out.println(arr1[i]);
+                }
+            }
+        }
+}
+}
 
 16. Write a Java program to remove duplicate elements from an array.
 
-Click me to see the solution
+import java.util.Arrays;
+
+class Main{
+    
+    public static void main(String args[]){
+        
+        int arr[] = {1,2,3,4,5,1,2};
+        
+        for(int i=0; i<arr.length;i++)
+        {
+            for(int j=i+1;j<arr.length;j++)
+            {
+                if(arr[i]==arr[j])
+                {
+                    System.out.println(arr[i]);
+                }
+            }
+        }
+}
+}
 
 17. Write a Java program to find the second largest element in an array.
 
