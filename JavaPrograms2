@@ -368,9 +368,22 @@ Click me to see the solution
 
 Click me to see the solution
 
-20. Write a Java program to convert an array to an ArrayList.
 
-Click me to see the solution
+
+
+20. Write a Java program to convert an array to an ArrayList.
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+
+        String[] arr = new String[] {"Python", "JAVA", "PHP", "Perl", "C#", "C++"};
+        ArrayList list = new ArrayList(Arrays.asList(arr));
+        System.out.println(list);
+    }
+}
+
 
 21. Write a Java program to convert an ArrayList to an array.
 
