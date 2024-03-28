@@ -1,0 +1,47 @@
+#Inheritance Problems
+
+class Person{
+    
+    String name="Shruti";
+    int age = 22;
+    
+    void dispPerson()
+    {
+       System.out.print("Name: "+this.name+"Age: "+this.age);   
+    }
+}
+
+class Employee extends Person{
+    
+    double salary = 56.87;
+    int id = 1;
+    
+    
+    void dispEmployee()
+    {
+        System.out.print("Salary: "+this.salary+"ID: "+this.id);   
+
+    }
+    
+}
+
+class Manager extends Person{
+    
+    int date = 28;
+    
+    void dispManager()
+    {
+        System.out.print("Date: " +this.date);   
+    }
+    
+}
+class Main{
+public static void main(String args[])
+{
+    Manager man = new Manager();
+    man.dispManager();
+    man.dispPerson();
+    man.dispEmployee(); //gives error because Manager is not extending Employee class
+}
+}
+
