@@ -197,6 +197,22 @@ class Main{
     }
 }
 
+class Main{
+    public static void main(String args[])
+    {
+       for(int i=0; i<5; i++)
+       {
+        for(int j=5; j>i; j--)
+        {
+            System.out.print("*");
+        }
+        System.out.println();
+       }
+
+
+    }
+}
+
 *****
 ****
 ***
@@ -242,6 +258,73 @@ class Main{
 12
 1
 
+class Main{
+
+    public static void pattern(int n)
+    {
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<n-i-1;j++)  //For Space = n-i-1
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*i+1;j++)  //For Stars = 2i+1
+            {
+                System.out.print("*");
+            }
+            for(int j=0;j<n-i-1;j++)  //For Space = n-i-1
+            {
+                System.out.print(" ");
+            }
+        System.out.println();    
+        }
+    }
+    public static void main(String args[])
+    {
+       pattern(6);
+    }
+}
+
+     *     
+    ***    
+   *****   
+  *******  
+ ********* 
+***********
+
+class Main{
+
+    public static void pattern(int n)
+    {
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+            for(int j=0;j<2*n-(2*i+1);j++) //For Stars = 2n-(2i+1)
+            {
+                System.out.print("*");
+            }
+            for(int j=0;j<i;j++)
+            {
+                System.out.print(" ");
+            }
+        System.out.println();    
+        }
+    }
+    public static void main(String args[])
+    {
+       pattern(6);
+    }
+}
+
+***********
+ ********* 
+  *******  
+   *****   
+    ***    
+     *  
 
 
 
