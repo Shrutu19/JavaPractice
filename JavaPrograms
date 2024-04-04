@@ -1562,8 +1562,17 @@ Sample Data: String1 = "Hello How Are You?"
 Sample Output:
 
 True
+import java.util.*;
+import java.io.*;
 
-Click Me To See The Solution
+public class Main{
+    public static void main(String[] args) {
+        String string1 = "Hello how are you?";
+        boolean startsWithHello = string1.startsWith("Hello");
+        System.out.println(startsWithHello);
+    }
+}
+
 
 86. Write A Java Program Starting With An Integer N, Divide It By 2 If It Is Even, Or Multiply It By 3 And Add 1 If It Is Odd. Repeat The Process Until N = 1.
 
@@ -1588,7 +1597,7 @@ class Main{
 
 
 
-87. Write A Java Program That Then Reads An Integer And Calculates The Sum Of Its Digits And Writes The Number Of Each Digit Of The Sum In English.
+87. Write A Java Program That Then Readss An Integer And Calculates The Sum Of Its Digits And Writes The Number Of Each Digit Of The Sum In English.
 
 Click Me To See The Solution
 
