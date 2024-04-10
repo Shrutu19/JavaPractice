@@ -572,3 +572,29 @@ class Solution {
     }
 }
 
+
+Reverse the number:
+import java.util.Scanner;
+public class Main{
+
+    public static int count(int n)
+    {
+       int revNum = 0;
+       while(n>0)
+       {
+        int lastDigit = n%10;
+        n=n/10;
+        revNum = (revNum*10)+lastDigit;
+       }
+       return revNum;
+    }
+
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter n: ");
+        int n = sc.nextInt();
+        System.out.println("Reverse of the number: "+count(n));
+
+    }
+}
