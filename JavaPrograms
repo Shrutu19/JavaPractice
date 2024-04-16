@@ -653,8 +653,8 @@ class demo33{
 
         
 
-         
-
+  
+  
 
     }
 }
@@ -702,8 +702,24 @@ Input A String: The Quick Brown Fox
 Expected Output
 
 Reverse String: Xof Nworb Kciuq Eht
+import java.util.Scanner;
 
-Click Me To See The Solution
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+    
+        System.out.print("Input a string: ");
+        char[] letters = scanner.nextLine().toCharArray();
+        
+        System.out.print("Reverse string: ");
+        
+        for (int i = letters.length - 1; i >= 0; i--) {
+            System.out.print(letters[i]);
+        }
+        System.out.print("\n");
+    }
+}
+
 
 38. Write A Java Program To Count Letters, Spaces, Numbers And Other Characters In An Input String.
 Expected Output
