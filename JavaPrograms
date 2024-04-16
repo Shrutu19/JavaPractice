@@ -702,6 +702,7 @@ Input A String: The Quick Brown Fox
 Expected Output
 
 Reverse String: Xof Nworb Kciuq Eht
+
 import java.util.Scanner;
 
 public class Main {
@@ -719,6 +720,19 @@ public class Main {
         System.out.print("\n");
     }
 }
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        char letters[] = {'i','a','m','s','h','r','u'};
+        
+        for (int i = letters.length - 1; i >= 0; i--) {
+            System.out.print(letters[i]);
+        }
+        System.out.print("\n");
+    }
+}
+
 
 
 38. Write A Java Program To Count Letters, Spaces, Numbers And Other Characters In An Input String.
