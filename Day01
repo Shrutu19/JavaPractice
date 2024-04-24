@@ -1,0 +1,203 @@
+1. given in string array capitalize first letter of every word
+ex. String arr = {"hello", "good","morning"};
+public class Main{
+public static void main(String args[]){
+String arr[] = {"hello", "good", "morning"};
+String str = "";
+for(String s:arr)
+System.out.println(s.substring(0,1).toUpperCase()+s.substring(1));
+}
+}
+
+2.find the longest word of given array
+ex. String fruits = {"mango","banana","orange","apple","watermelon"};
+output: watermelon
+public class Main {
+public static void main(String[]args){
+String fruits[] = {"mango","banana","orange","apple","watermelon"};
+String longest = ""; 
+for (String str : fruits) { 
+if (str.length() > longest.length()) { 
+longest = str; 
+} 
+} 
+System.out.println(longest);
+} 
+} 
+
+
+3.reverse a string using stack data structure
+
+import java.util.*;
+public class Main {
+static void reverse(StringBuilder str){
+Stack<Character> s = new Stack<>();
+for(int i=0;i<str.length();i++)
+s.push(str.charAt(i));
+str.delete(0, str.length());
+while(!s.empty()){
+str.append(s.peek());
+s.pop();
+}
+}
+public static void main(String[] args) {
+StringBuilder str = new StringBuilder("Shruti");
+reverse(str);
+System.out.println(str);
+}
+}
+
+
+
+
+4.write a java program to count the words of given string
+ex. String str = "java is object oriented programming language";
+public class Main{
+public static void main(String args[])
+{
+String str = "java is object oriented programming language";
+int count = 0;
+for(int i=0; i<str.length();i++)
+{
+str.charAt(i);
+count++;
+}
+System.out.println(count);
+}
+}
+
+
+5.write a java program to remove duplicate character from given string without using set data structure.
+ex. hello world
+output: helo wrd
+
+public class Main{
+public static void main(String args[]){
+String str = "hello world";
+String result = "";
+for(int i = 0; i<str.length();i++){
+String ch = ""+str.charAt(i);
+if(result.contains(ch)){
+continue;
+}
+result = result + ch;
+}
+System.out.println(result);
+}
+}
+
+
+1. Write a Java program to sort an array of given integers using the Quick sort algorithm.
+
+import java.util.Arrays;
+
+public class Main {
+
+public static void quickSort(int arr[], int left, int right) {
+if(left >= right)
+return;
+int i = left, j = right; 
+while(i < j) {
+for( ; i <= right && arr[i] <= arr[left] ; i++);
+for( ; arr[j] > arr[left] ; j--);
+if(i < j) {
+int temp = arr[i];
+arr[i] = arr[j];
+arr[j] = temp;
+}
+}
+int temp = arr[left];
+arr[left] = arr[j];
+arr[j] = temp;
+quickSort(arr, left, j-1);
+quickSort(arr, j+1, right);
+}
+public static void main(String[] args) {
+int arr[] = {66, 33, 99, 11, 77, 22, 55, 66, 88};
+System.out.println("Before sort : " + Arrays.toString(arr));
+quickSort(arr, 0, arr.length-1);
+System.out.println("After sort : " + Arrays.toString(arr));
+}
+
+}
+
+
+
+2. Write a Java program to insert an element (specific position) into an array.
+import java.util.Arrays;
+public class Main{
+public static void main(String args[]){
+int arr[] = {1,4,6,2,7,8};
+int index = 4;
+int value = 9;
+for (int i =arr.length-1; i > index; i--) {
+arr[i] =arr[i - 1];
+}
+arr[index] = value;
+System.out.println(Arrays.toString(arr));
+}
+}
+
+
+3.Write a Java program to find the second largest element in an array.
+import java.util.Arrays;
+public class Main{
+public static void main(String args[]){
+int arr1[] = {1,4,6,2,7,8};
+int temp = 0;
+for(int i=0; i<arr1.length;i++){
+for(int j=i+1; j<arr1.length;j++){
+if(arr1[i]>arr1[j]){
+temp = arr1[i];
+arr1[i]=arr1[i];
+arr1[i]=temp;
+}
+}
+}
+System.out.println(arr1[arr1.length-2]);
+}
+}
+
+
+4Write a Java program to find the second smallest element in an array. 
+import java.util.Arrays;
+public class Main{
+public static void main(String args[]){
+int arr1[] = {1,4,6,2,7,8};
+int temp = 0;
+for(int i=0; i<arr1.length;i++){
+for(int j=i+1; j<arr1.length;j++){
+if(arr1[i]>arr1[j]){
+temp = arr1[i];
+arr1[i]=arr1[i];
+arr1[i]=temp;
+}
+}
+}
+System.out.println(arr1[arr1.length-3]);
+}
+}
+
+
+
+5 Write a Java program to find common elements between two integer arrays.
+import java.util.Arrays;
+public class Main{
+public static void main(String args[]){
+int arr1[] = {1,4,6,2,7,8};
+int arr2[] = {4,10,12,8,11};
+
+for(int i=0; i<arr1.length;i++){
+for(int j=0; j<arr2.length;j++){
+if(arr1[i]==arr2[j]){
+System.out.println(arr2[j]);
+}
+}
+}
+}
+}
+
+
+
+
+
